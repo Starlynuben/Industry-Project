@@ -7,8 +7,8 @@
 </head>
 <header>
 	<div id="headerContainer">
-		<div id="number"></div>
-		<div id="email"></div>
+		<div id="number"><p class="headerNumber">0800 448 988</p></div>
+		<div id="email"><p class="headerNumber">thegoodguys@biz.co.nz</p></div>
 	</div>
 	<div id="logo"></div>
 
@@ -18,8 +18,8 @@
 				<li><a href="">Home</a></li>
 				<li><a href="">Photos</a></li>
 				<li><a href="">Employment Vacancies</a></li>
-				<li><a href="">Terms and Conditions</a></li>
 				<li><a href="">Contact</a></li>
+				<li><a href="">FAQ</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -30,8 +30,16 @@
 <div id="slideshow"></div>
 <body>
 	
-	<div></div>
-	<main></main>
+	<div id="companyMessage"></div>
+	<main>
+
+
+		<div class="boxHolder">
+			<div id="infoBox1"></div>
+			<div id="infoBox2"></div>
+		</div>
+
+	</main>
 </body>
 <footer></footer>
 </html>
