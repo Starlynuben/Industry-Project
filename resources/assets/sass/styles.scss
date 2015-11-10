@@ -20,7 +20,7 @@ header{
 	#logo{
 		width: 30em;
 		height: 7em;
-		margin-top: 1em;
+		padding-top: 1em;
 		margin-left: 15em;
 	}
 	#headerContainer{
@@ -43,6 +43,7 @@ header{
 
 	nav{
 		margin-left: 15em;
+		height: 2em;
 		ul{
 			margin: 0.5em 0 0 0;
 			padding: 0;
@@ -50,6 +51,7 @@ header{
 			li{
 				height: 1.5em;
 				display: inline-block;
+				margin-right: 1em;
 
 				a{
 					text-decoration: none;
