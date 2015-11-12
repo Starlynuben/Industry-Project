@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>The Good Guys</title>
-	<link rel="stylesheet" href="../../resources/assets/css/styles.css">
+	<link rel="stylesheet" href="{{asset('css/styles.css')}}">
 </head>
 <header>
 	<div id="headerContainer">
@@ -15,8 +15,8 @@
 	<div>
 		<nav>
 			<ul>
-				<li><a href="index.blade.php">Home</a></li>
-				<li><a href="gallery.blade.php">Photos</a></li>
+				<li><a href="{{url('home')}}">Home</a></li>
+				<li><a href="{{url('gallery')}}">Photos</a></li>
 				<li><a href="">Employment Vacancies</a></li>
 				<li><a href="">Contact</a></li>
 				<li><a href="">FAQ</a></li>
@@ -28,7 +28,7 @@
 	</div>
 </header>
 
-@yeild('content')
+@yield('content')
 
 <footer></footer>
 </html>

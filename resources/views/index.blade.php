@@ -1,4 +1,4 @@
-@extends('template.main')  
+@extends('templates.main')  
        
 @section('content') 
 <div id="slideshow"></div>
@@ -16,5 +16,5 @@
 	</main>
 </body>
 
-@end
+@stop
 
