@@ -17,9 +17,9 @@
 			<ul>
 				<li><a href="{{url('home')}}">Home</a></li>
 				<li><a href="{{url('gallery')}}">Photos</a></li>
-				<li><a href="">Employment Vacancies</a></li>
-				<li><a href="">Contact</a></li>
-				<li><a href="">FAQ</a></li>
+				<li><a href="{{url('employment')}}">Employment Vacancies</a></li>
+				<li><a href="{{url('contact')}}">Contact</a></li>
+				<li><a href="{{url('faq')}}">FAQ</a></li>
 			</ul>
 		</nav>
 	</div>

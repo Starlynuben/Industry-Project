@@ -18,4 +18,16 @@ class PagesController extends Controller
 
     	return view('gallery');
     }
+    public function showEmployment(){
+
+    	return view('employment');
+    }
+    public function showContact(){
+
+    	return view('contact');
+    }
+    public function showFAQ(){
+
+    	return view('faq');
+    }
 }

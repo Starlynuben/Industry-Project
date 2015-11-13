@@ -1,37 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>The Good Guys</title>
-	<link rel="stylesheet" href="../../resources/assets/css/styles.css">
-</head>
-<header>
-	<div id="headerContainer">
-		<div id="number"><p class="headerNumber">0800 448 988</p></div>
-		<div id="email"><p class="headerNumber">thegoodguys@biz.co.nz</p></div>
-	</div>
-	<div id="logo"></div>
+@extends('templates.main')
 
-	<div>
-		<nav>
-			<ul>
-				<li><a href="index.blade.php">Home</a></li>
-				<li><a href="gallery.blade.php">Photos</a></li>
-				<li><a href="">Employment Vacancies</a></li>
-				<li><a href="">Contact</a></li>
-				<li><a href="">FAQ</a></li>
-			</ul>
-		</nav>
-	</div>
-	<div>
-		
-	</div>
-</header>
+
+@section('content')
 <body>
 	<main>
+		Please contact us here
 
+		<div>
+			
+			{!!  Form::open(array('url' => 'emails')) !!}
+				<fieldset>
+					{!! Form::Label('name', 'Name');!!}
+					{!! Form::text('name') !!}
+
+					{!! Form::Label('phone', 'Phone Number');!!}
+					{!! Form::text('phone') !!}
+
+					{!! Form::Label('mobile', 'Mobile Number');!!}
+					{!! Form::text('mobile') !!}
+
+					{!! Form::Label('email', 'Email');!!}
+					{!! Form::text('email') !!}
+
+					{!! Form::Label('message', 'Message');!!}
+					{!! Form::text('message') !!}
+
+					<input type="submit" value="Contact Us">
+				</fieldset>
+			{!! Form::close() !!}
+		</div>
 
 	</main>
 </body>
-<footer></footer>
-</html>
+
+@stop
