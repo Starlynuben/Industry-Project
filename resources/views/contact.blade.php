@@ -4,31 +4,29 @@
 @section('content')
 <body>
 	<main>
-		Please contact us here
 
-		<div>
-			
-			{!!  Form::open(array('url' => 'emails')) !!}
-				<fieldset>
-					{!! Form::Label('name', 'Name');!!}
+		 <h2>Please contact us here</h2>
+
+			{!!  Form::open(array('url' => 'contact')) !!}
+				<fieldset class="contactEmailForm">
+					{!! Form::label('name', 'Name');!!}
 					{!! Form::text('name') !!}
 
-					{!! Form::Label('phone', 'Phone Number');!!}
+					{!! Form::label('phone', 'Phone Number');!!}
 					{!! Form::text('phone') !!}
 
-					{!! Form::Label('mobile', 'Mobile Number');!!}
+					{!! Form::label('mobile', 'Mobile Number');!!}
 					{!! Form::text('mobile') !!}
 
-					{!! Form::Label('email', 'Email');!!}
+					{!! Form::label('email', 'Email');!!}
 					{!! Form::text('email') !!}
 
-					{!! Form::Label('message', 'Message');!!}
+					{!! Form::label('message', 'Message');!!}
 					{!! Form::text('message') !!}
 
 					<input type="submit" value="Contact Us">
 				</fieldset>
 			{!! Form::close() !!}
-		</div>
 
 	</main>
 </body>

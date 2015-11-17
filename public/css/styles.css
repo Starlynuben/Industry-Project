@@ -69,6 +69,9 @@ main .boxHolder {
     height: 20em;
     background-color: #DDDDDD; }
 
+main .contactEmailForm {
+  width: 10em; }
+
 footer {
   height: 3em;
   width: 100%;
