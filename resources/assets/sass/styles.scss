@@ -108,3 +108,8 @@ footer{
 	background-color: #E80000;
 	margin-top: 5em;
 }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	section{
+		max-width: 50em;
+	}
+}
