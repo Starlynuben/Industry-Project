@@ -10,7 +10,23 @@ body{
 header{
 	width: 100%;
 	margin: auto;
-	background-color: #535362;
+	background-color: white;
+	flex: wrap;
+
+	.nav{
+		position: absolute;
+		right: 0.8em;
+		top: 0.5em;
+		display: block;
+		font-size: 4em;
+	}
+
+
+	.companyName{
+		font-size: 7em;
+		margin: 0;
+		padding-left: 10%;
+	}
 
 	.headerNumber{
 		font-size: 2em;
@@ -23,10 +39,13 @@ header{
 		padding-top: 1em;
 		margin-left: 15em;
 		background-color: white;
+		display: none;
 	}
 	#headerContainer{
 		float: right;
 		margin-right: 15em;
+		display: none;
+
 		#number{
 			width: 20em;
 			height: 3em; 
@@ -85,17 +104,6 @@ main{
 		width: 70em;
 		display: flex;
 
-		#infoBox1{
-			width: 30em;
-			height: 20em;
-			margin-right: 10em;
-			background-color: #DDDDDD;
-		}
-		#infoBox2{
-			width: 30em;
-			height: 20em;
-			background-color: #DDDDDD;
-		}
 	}
 
 	.contactEmailForm{
@@ -113,3 +121,113 @@ footer{
 		max-width: 50em;
 	}
 }
+
+// *{
+
+
+// }
+
+// body{
+// 	margin: 0;
+// }
+
+// header{
+// 	width: 100%;
+// 	margin: auto;
+// 	background-color: #535362;
+
+// 	.headerNumber{
+// 		font-size: 2em;
+// 		margin: 0;
+// 	}
+
+// 	#logo{
+// 		width: 30em;
+// 		height: 7em;
+// 		padding-top: 1em;
+// 		margin-left: 15em;
+// 		background-color: white;
+// 	}
+// 	#headerContainer{
+// 		float: right;
+// 		margin-right: 15em;
+// 		#number{
+// 			width: 20em;
+// 			height: 3em; 
+// 			margin: 1em 0 0 0;
+// 		}
+
+// 		#email{
+// 			width: 20em;
+// 			height: 3em; 
+// 			margin: 1em 0 0 0;
+		
+// 		}	
+// 	}
+	
+
+// 	nav{
+// 		margin-left: 15em;
+// 		height: 2em;
+// 		ul{
+// 			margin: 0.5em 0 0 0;
+// 			padding: 0;
+// 			flex-direction: column;
+// 			li{
+// 				height: 1.5em;
+// 				display: inline-block;
+// 				margin-right: 1em;
+
+// 				a{
+// 					text-decoration: none;
+// 					color: black;
+// 					font-size: 1.3em;
+
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// #slideshow{
+// 	width: 100%;
+// 	height: 25em;
+// 	background-color: #E80000;
+// }
+
+// #companyMessage{
+// 	margin: 2em auto 2em auto;
+// 	height: 4em;
+// 	width: 50%;
+// }
+
+// main{
+	
+
+// 	.boxHolder{
+// 		margin: 2em auto 0 auto;
+// 		width: 70em;
+// 		display: flex;
+
+// 		#infoBox1{
+// 			width: 30em;
+// 			height: 20em;
+// 			margin-right: 10em;
+// 			background-color: #DDDDDD;
+// 		}
+// 		#infoBox2{
+// 			width: 30em;
+// 			height: 20em;
+// 			background-color: #DDDDDD;
+// 		}
+// 	}
+
+// 	.contactEmailForm{
+// 		width: 10em;
+// 	}
+// }
+// footer{
+// 	height: 3em;
+// 	width: 100%;
+// 	background-color: #E80000;
+// 	margin-top: 5em;

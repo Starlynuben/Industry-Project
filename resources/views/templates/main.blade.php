@@ -4,8 +4,14 @@
 	<meta charset="UTF-8">
 	<title>The Good Guys</title>
 	<link rel="stylesheet" href="{{asset('css/styles.css')}}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <header>
+
+	<p class="companyName">The Good Guys</p>
+
+	<div class="nav"><i class="fa fa-bars"></i></div>
+
 	<div id="headerContainer">
 		<div id="number"><p class="headerNumber">0800 448 988</p></div>
 		<div id="email"><p class="headerNumber">thegoodguys@biz.co.nz</p></div>

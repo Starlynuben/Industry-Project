@@ -4,7 +4,20 @@ body {
 header {
   width: 100%;
   margin: auto;
-  background-color: #535362; }
+  background-color: white;
+  -webkit-flex: wrap;
+  -ms-flex: wrap;
+  flex: wrap; }
+  header .nav {
+    position: absolute;
+    right: 0.8em;
+    top: 0.5em;
+    display: block;
+    font-size: 4em; }
+  header .companyName {
+    font-size: 7em;
+    margin: 0;
+    padding-left: 10%; }
   header .headerNumber {
     font-size: 2em;
     margin: 0; }
@@ -13,10 +26,12 @@ header {
     height: 7em;
     padding-top: 1em;
     margin-left: 15em;
-    background-color: white; }
+    background-color: white;
+    display: none; }
   header #headerContainer {
     float: right;
-    margin-right: 15em; }
+    margin-right: 15em;
+    display: none; }
     header #headerContainer #number {
       width: 20em;
       height: 3em;
@@ -59,15 +74,6 @@ main .boxHolder {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
-  main .boxHolder #infoBox1 {
-    width: 30em;
-    height: 20em;
-    margin-right: 10em;
-    background-color: #DDDDDD; }
-  main .boxHolder #infoBox2 {
-    width: 30em;
-    height: 20em;
-    background-color: #DDDDDD; }
 
 main .contactEmailForm {
   width: 10em; }
@@ -77,3 +83,7 @@ footer {
   width: 100%;
   background-color: #E80000;
   margin-top: 5em; }
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  section {
+    max-width: 50em; } }
