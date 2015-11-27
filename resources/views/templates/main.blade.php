@@ -7,42 +7,47 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 </head>
-<header>
 
-	<p class="companyName">The Good Guys</p>
+<div class="container">
+	
+	<header>
 
-	<div id="bars"><i class="fa fa-bars"></i></div>
+		<p class="companyName">The Good Guys</p>
 
-	<div id="headerContainer">
-		<div id="number"><p class="headerNumber">0800 448 988</p></div>
-		<div id="email"><p class="headerNumber">thegoodguys@biz.co.nz</p></div>
-	</div>
-	<div id="logo"></div>
+		<div id="bars"><i class="fa fa-bars"></i></div>
 
-	<div>
-		<nav>
-			<ul id="nav">
-				<li><a href="{{url('home')}}">Home</a></li>
-				<li><a href="{{url('gallery')}}">Photos</a></li>
-				<li><a href="{{url('employment')}}">Employment Vacancies</a></li>
-				<li><a href="{{url('contact')}}">Contact</a></li>
-				<li><a href="{{url('faq')}}">FAQ</a></li>
-			</ul>
-		</nav>
-	</div>
+		<div id="headerContainer">
+			<div id="number"><p class="headerNumber">0800 448 988</p></div>
+			<div id="email"><p class="headerNumber">thegoodguys@biz.co.nz</p></div>
+		</div>
+		<div id="logo"></div>
 
-	<div>
-		
-	</div>
-</header>
+		<div>
+			<nav>
+				<ul id="nav">
+					<li><a href="{{url('home')}}">Home</a></li>
+					<li><a href="{{url('gallery')}}">Photos</a></li>
+					<li><a href="{{url('employment')}}">Employment Vacancies</a></li>
+					<li><a href="{{url('contact')}}">Contact</a></li>
+					<li><a href="{{url('faq')}}">FAQ</a></li>
+				</ul>
+			</nav>
+		</div>
 
-<body>
+		<div>
+			
+		</div>
+	</header>
 
-@yield('content')
+	<body>
 
-</body>
+	@yield('content')
 
-<footer></footer>
+	</body>
+
+	<footer></footer>
+
+</div>
 
 <script src="{{asset('js/script.js')}}"></script>
 

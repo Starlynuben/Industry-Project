@@ -5,11 +5,14 @@
 <body>
 	<main>
 
-		 <h2>Please contact us here</h2>
+		<div class="contactForm"> 
 
-			{!!  Form::open(array('url' => 'contact')) !!}
-				<fieldset class="contactEmailForm">
-					{!! Form::label('name', 'Name');!!}
+		 <p class="contactTitle">Please contact us here</p>
+
+			{!!  Form::open(array('url' => 'contact', 'class'=>'pure-form pure-form-stacked')) !!}
+			
+
+					{!! Form::label('name', 'Name', array('class' => 'formwidth'));!!}
 					{!! Form::text('name') !!}
 
 					{!! Form::label('phone', 'Phone Number');!!}
@@ -23,10 +26,14 @@
 
 					{!! Form::label('message', 'Message');!!}
 					{!! Form::text('message') !!}
+					
+					<br>
 
-					<input type="submit" value="Contact Us">
-				</fieldset>
+					<input type="submit" class="pure-button pure-button-primary"  value="Contact Us">
+				
 			{!! Form::close() !!}
+
+		</div>
 
 	</main>
 </body>

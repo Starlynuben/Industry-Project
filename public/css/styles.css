@@ -1,13 +1,20 @@
+.container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 120em; }
+
 body {
   margin: 0; }
 
 header {
   width: 100%;
-  margin: auto;
-  background-color: white;
-  -webkit-flex: wrap;
-  -ms-flex: wrap;
-  flex: wrap; }
+  margin: 0 auto;
+  background-color: white; }
   header #bars {
     position: absolute;
     right: 0.8em;
@@ -90,8 +97,12 @@ main .boxHolder {
   display: -ms-flexbox;
   display: flex; }
 
-main .contactEmailForm {
-  width: 10em; }
+main .contactForm {
+  background-color: #e5e5ff; }
+
+main .contactTitle {
+  font-size: 4em;
+  margin: 0; }
 
 footer {
   height: 3em;
