@@ -1,4 +1,4 @@
-.container{
+/*.container{
 	display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -149,112 +149,209 @@ footer{
 	}
 }
 
-// *{
+*/
+.container{
+	
+    min-height: 100%;
+    
+}
 
+#bars{
+	display: none;
+}
 
-// }
+ body{
+ 	margin: 0;
+ }
 
-// body{
-// 	margin: 0;
-// }
+ header{
+ 	width: 100%;
+ 	margin: auto;
+ 	background-color: #535362;
+ 	margin: 0;
 
-// header{
-// 	width: 100%;
-// 	margin: auto;
-// 	background-color: #535362;
+ 	.headerNumber{
+ 		font-size: 2em;
+ 		margin: 0;
+ 	}
 
-// 	.headerNumber{
-// 		font-size: 2em;
-// 		margin: 0;
-// 	}
+ 	#logo{
+ 		width: 30em;
+ 		height: 7em;
+ 		padding-top: 1em;
+ 		margin-left: 15em;
+ 		background-color: white;
+ 	}
+ 	#headerContainer{
+ 		float: right;
+ 		margin-right: 15em;
 
-// 	#logo{
-// 		width: 30em;
-// 		height: 7em;
-// 		padding-top: 1em;
-// 		margin-left: 15em;
-// 		background-color: white;
-// 	}
-// 	#headerContainer{
-// 		float: right;
-// 		margin-right: 15em;
-// 		#number{
-// 			width: 20em;
-// 			height: 3em; 
-// 			margin: 1em 0 0 0;
-// 		}
+ 		#number{
+ 			width: 20em;
+ 			height: 3em; 
+ 			margin: 1em 0 0 0;
+ 		}
 
-// 		#email{
-// 			width: 20em;
-// 			height: 3em; 
-// 			margin: 1em 0 0 0;
+ 		#email{
+ 			width: 20em;
+ 			height: 3em; 
+ 			margin: 1em 0 0 0;
 		
-// 		}	
-// 	}
+ 		}	
+ 	}
 	
 
-// 	nav{
-// 		margin-left: 15em;
-// 		height: 2em;
-// 		ul{
-// 			margin: 0.5em 0 0 0;
-// 			padding: 0;
-// 			flex-direction: column;
-// 			li{
-// 				height: 1.5em;
-// 				display: inline-block;
-// 				margin-right: 1em;
+ 	nav{
+ 		margin-left: 15em;
+ 		height: 2em;
+ 		ul{
+ 			margin: 0.5em 0 0 0;
+ 			padding: 0;
+ 			flex-direction: column;
+ 			li{
+ 				height: 1.5em;
+ 				display: inline-block;
+ 				margin-right: 1em;
 
-// 				a{
-// 					text-decoration: none;
-// 					color: black;
-// 					font-size: 1.3em;
+ 				a{
+ 					text-decoration: none;
+ 					color: black;
+ 					font-size: 1.3em;
 
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+ 				}
+ 			}
+ 		}
+ 	}
+ }
 
-// #slideshow{
-// 	width: 100%;
-// 	height: 25em;
-// 	background-color: #E80000;
-// }
 
-// #companyMessage{
-// 	margin: 2em auto 2em auto;
-// 	height: 4em;
-// 	width: 50%;
-// }
+ #companyMessage{
+ 	margin: 2em auto 2em auto;
+ 	height: 4em;
+ 	width: 50%;
+ 	text-align: center;
+ 	font-size: 1.3em;
+ }
 
-// main{
+.pageTitle{
+	margin: 3em 0 2em 5em;
+}
+
+ main{
 	
 
-// 	.boxHolder{
-// 		margin: 2em auto 0 auto;
-// 		width: 70em;
-// 		display: flex;
+ 	.boxHolder{
+ 		margin: 2em auto 0 auto;
+ 		width: 70em;
+ 		display: flex;
 
-// 		#infoBox1{
-// 			width: 30em;
-// 			height: 20em;
-// 			margin-right: 10em;
-// 			background-color: #DDDDDD;
-// 		}
-// 		#infoBox2{
-// 			width: 30em;
-// 			height: 20em;
-// 			background-color: #DDDDDD;
-// 		}
-// 	}
+ 		#infoBox1{
+ 			width: 30em;
+ 			margin-right: 10%;
+ 			background-color: #DDDDDD;
+ 			padding: 2em;
+ 			margin-bottom: 10em;
+ 			line-height: 1.3em;
+ 		}
+ 		#infoBox2{
+ 			width: 30em;
+ 			height: 20em;
+ 			background-color: #DDDDDD;
+ 			padding: 2em;
+ 			margin-bottom: 10em;
+ 			line-height: 1.3em;
+ 		}
+ 	}
 
-// 	.contactEmailForm{
-// 		width: 10em;
-// 	}
-// }
-// footer{
-// 	height: 3em;
-// 	width: 100%;
-// 	background-color: #E80000;
-// 	margin-top: 5em;
+ 	.contactEmailForm{
+ 		width: 10em;
+ 	}
+ }
+ footer{
+ 	height: 3em;
+ 	width: 100%;
+ 	background-color: #E80000;
+ 	margin-top: 5em;
+ 	position: absolute;
+ 	bottom: 0;
+ 	left: 0;
+
+}
+.footerInfo{
+	padding-top: 1em; 
+	text-align: center;
+}
+
+
+/*Home Page Slider ----------------------------------*/
+
+#slides {
+    display:none;
+}
+.slidesjs-previous{
+	margin: 0 0 0 2em;
+}
+.slidesjs-next{
+	
+}
+.slidesjs-pagination li a {
+    display: block;
+    width: 13px;
+    height: 0;
+    padding-top: 13px;
+    background-image: url(images/slideindicator.png);
+    background-position: 0 0;
+    float: left;
+    overflow: hidden;
+}
+.slidesjs-pagination {
+    margin:6px 2em 0;
+    float: right;
+    list-style: none;
+}
+
+.slidesjs-pagination li {
+    float: left;
+    margin: 0 1px;
+}
+.slidesjs-pagination li a.active, .slidesjs-pagination li a:hover.active { background-position: 0 -13px }
+
+.slidesjs-pagination li a:hover { background-position: 0 -26px }
+
+#slides a:link, #slides a:visited { color: #333 }
+
+#slides a:hover, #slides a:active { color: #9e2020 }
+
+/*Contact Page -------------------------------*/
+
+form{
+	margin-left: 10em;
+}
+.contactTitle{
+	margin: 3em 0 3em 10em;
+}
+
+/*Employment Vacancies Page ----------------------------------*/
+
+.subTitle{
+	margin: 0 0 0 10em;
+}
+
+.employmentLink{
+	margin: 0 0 0 20em;
+}
+
+/*FAQ Page ---------------------------------------*/
+
+.questionContainer{
+	margin-left: 15em;
+	
+}
+.faqContainer{
+
+}
+.questionSpan{
+	font-weight: bold;
+	font-size: 1.5em;
+	padding-right: 1em;
+}

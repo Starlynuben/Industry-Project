@@ -1,44 +1,169 @@
+/*.container{
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 120em;
+}
+
+body{
+	margin: 0;
+}
+
+header{
+	width: 100%;
+	margin: 0 auto;
+	background-color: white;
+	
+
+	#bars{
+		position: absolute;
+		right: 0.8em;
+		top: 0.5em;
+		display: block;
+		font-size: 6em;
+	}
+	#nav{
+		flex: 0 0 100%;
+	    height: 0;
+	    margin: 0;
+	    padding: 0;
+	    background-color: white;
+	    overflow: hidden;
+	    transition: all 0.5s ease;
+	    list-style-type: none;
+
+	    
+	}
+	.show{
+	   	height: 30em !important;
+	}
+	.companyName{
+		font-size: 6em;
+		margin: 0;
+		padding-left: 10%;
+		padding: 0.4em;
+	}
+
+	.headerNumber{
+		font-size: 2em;
+		margin: 0;
+	}
+
+	#logo{
+		width: 30em;
+		height: 7em;
+		padding-top: 1em;
+		margin-left: 15em;
+		background-color: white;
+		display: none;
+	}
+	#headerContainer{
+		float: right;
+		margin-right: 15em;
+		display: none;
+
+		#number{
+			width: 20em;
+			height: 3em; 
+			margin: 1em 0 0 0;
+		}
+
+		#email{
+			width: 20em;
+			height: 3em; 
+			margin: 1em 0 0 0;
+		
+		}	
+	}
+	
+
+	ul{
+		margin: 0.5em 0 0 0;
+		padding: 0;
+		flex-direction: column;
+		li{
+			height: 2em;
+			display: inline-block;
+			margin-right: 1em;
+			width: 100%;
+
+			a{
+			    display: block;
+			    text-align:center;
+			    line-height: 2em;
+			    text-decoration: none;
+			    color: black;
+			    font-size: 4em;
+
+			}
+		}
+	}
+	
+}
+
+#slideshow{
+	width: 100%;
+	height: 25em;
+	background-color: #E80000;
+}
+
+#companyMessage{
+	margin: 2em auto 2em auto;
+	height: 4em;
+	width: 50%;
+}
+
+main{
+	
+
+	.boxHolder{
+		margin: 2em auto 0 auto;
+		width: 70em;
+		display: flex;
+
+	}
+
+	.contactForm{
+
+		background-color: #e5e5ff;
+		
+		
+		
+		
+	}
+	.contactTitle{
+		font-size: 4em;
+		margin: 0;
+		
+	}
+}
+footer{
+	height: 3em;
+	width: 100%;
+	background-color: #E80000;
+	margin-top: 5em;
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	section{
+		max-width: 50em;
+	}
+}
+
+*/
 .container {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 100vh;
-  max-width: 120em; }
+  min-height: 100%; }
+
+#bars {
+  display: none; }
 
 body {
   margin: 0; }
 
 header {
   width: 100%;
-  margin: 0 auto;
-  background-color: white; }
-  header #bars {
-    position: absolute;
-    right: 0.8em;
-    top: 0.5em;
-    display: block;
-    font-size: 6em; }
-  header #nav {
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    height: 0;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    overflow: hidden;
-    transition: all 0.5s ease;
-    list-style-type: none; }
-  header .show {
-    height: 30em !important; }
-  header .companyName {
-    font-size: 6em;
-    margin: 0;
-    padding-left: 10%;
-    padding: 0.4em; }
+  margin: auto;
+  background-color: #535362;
+  margin: 0; }
   header .headerNumber {
     font-size: 2em;
     margin: 0; }
@@ -47,12 +172,10 @@ header {
     height: 7em;
     padding-top: 1em;
     margin-left: 15em;
-    background-color: white;
-    display: none; }
+    background-color: white; }
   header #headerContainer {
     float: right;
-    margin-right: 15em;
-    display: none; }
+    margin-right: 15em; }
     header #headerContainer #number {
       width: 20em;
       height: 3em;
@@ -61,34 +184,33 @@ header {
       width: 20em;
       height: 3em;
       margin: 1em 0 0 0; }
-  header ul {
-    margin: 0.5em 0 0 0;
-    padding: 0;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    header ul li {
-      height: 2em;
-      display: inline-block;
-      margin-right: 1em;
-      width: 100%; }
-      header ul li a {
-        display: block;
-        text-align: center;
-        line-height: 2em;
-        text-decoration: none;
-        color: black;
-        font-size: 4em; }
-
-#slideshow {
-  width: 100%;
-  height: 25em;
-  background-color: #E80000; }
+  header nav {
+    margin-left: 15em;
+    height: 2em; }
+    header nav ul {
+      margin: 0.5em 0 0 0;
+      padding: 0;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      header nav ul li {
+        height: 1.5em;
+        display: inline-block;
+        margin-right: 1em; }
+        header nav ul li a {
+          text-decoration: none;
+          color: black;
+          font-size: 1.3em; }
 
 #companyMessage {
   margin: 2em auto 2em auto;
   height: 4em;
-  width: 50%; }
+  width: 50%;
+  text-align: center;
+  font-size: 1.3em; }
+
+.pageTitle {
+  margin: 3em 0 2em 5em; }
 
 main .boxHolder {
   margin: 2em auto 0 auto;
@@ -96,20 +218,94 @@ main .boxHolder {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  main .boxHolder #infoBox1 {
+    width: 30em;
+    margin-right: 10%;
+    background-color: #DDDDDD;
+    padding: 2em;
+    margin-bottom: 10em;
+    line-height: 1.3em; }
+  main .boxHolder #infoBox2 {
+    width: 30em;
+    height: 20em;
+    background-color: #DDDDDD;
+    padding: 2em;
+    margin-bottom: 10em;
+    line-height: 1.3em; }
 
-main .contactForm {
-  background-color: #e5e5ff; }
-
-main .contactTitle {
-  font-size: 4em;
-  margin: 0; }
+main .contactEmailForm {
+  width: 10em; }
 
 footer {
   height: 3em;
   width: 100%;
   background-color: #E80000;
-  margin-top: 5em; }
+  margin-top: 5em;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  section {
-    max-width: 50em; } }
+.footerInfo {
+  padding-top: 1em;
+  text-align: center; }
+
+/*Home Page Slider ----------------------------------*/
+#slides {
+  display: none; }
+
+.slidesjs-previous {
+  margin: 0 0 0 2em; }
+
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url(images/slideindicator.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden; }
+
+.slidesjs-pagination {
+  margin: 6px 2em 0;
+  float: right;
+  list-style: none; }
+
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px; }
+
+.slidesjs-pagination li a.active, .slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px; }
+
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px; }
+
+#slides a:link, #slides a:visited {
+  color: #333; }
+
+#slides a:hover, #slides a:active {
+  color: #9e2020; }
+
+/*Contact Page -------------------------------*/
+form {
+  margin-left: 10em; }
+
+.contactTitle {
+  margin: 3em 0 3em 10em; }
+
+/*Employment Vacancies Page ----------------------------------*/
+.subTitle {
+  margin: 0 0 0 10em; }
+
+.employmentLink {
+  margin: 0 0 0 20em; }
+
+/*FAQ Page ---------------------------------------*/
+.questionContainer {
+  margin-left: 15em; }
+
+.questionSpan {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-right: 1em; }
