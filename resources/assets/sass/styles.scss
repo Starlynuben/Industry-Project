@@ -178,9 +178,13 @@ footer{
  	#logo{
  		width: 30em;
  		height: 7em;
- 		padding-top: 1em;
  		margin-left: 15em;
  		background-color: white;
+
+ 		.companyName{
+ 			margin: 0;
+ 			padding-top: 1em;
+ 		}
  	}
  	#headerContainer{
  		float: right;

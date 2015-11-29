@@ -8,9 +8,12 @@ bars.onclick = function(){
 		nav.className = "";
 	}
 }
-    $(function(){
-      $("#slides").slidesjs({
-        width: 940,
-        height: 300
-      });
-    });
+
+$(function(){
+  $("#slides").slidesjs({
+    width: 940,
+    height: 300
+  });
+});
+
+
