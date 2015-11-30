@@ -126,7 +126,7 @@
 
 			<h2 class="subTitle">CONDITIONS OF THE GOOD GUYS LTD AUTHORITY TO ACCEPT AUTOMATIC PAYMENTS</h2>
 
-			<p class="termsText">
+			<p class="termsText termsBottom">
 
 			The Bank will endeavour to effect such automatic payments without any responsibility or liability for any refusal or omission to make all or any of the payments or for late payment or for any omission to follow any such instructions.  Further, the Bank accepts no responsibility or liability for the accuracy of the information contained in the payment information fields on this authority or for failure to transmit such information in the manner requested.  In any event this authority is subject to any arrangement now or hereafter subsisting between yourself/ourselves and the Bank in relation to my/our account.
 			<br>
