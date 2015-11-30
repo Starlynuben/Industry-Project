@@ -30,4 +30,8 @@ class PagesController extends Controller
 
     	return view('faq');
     }
+    public function showTerms() {
+
+        return view('terms');
+    }
 }

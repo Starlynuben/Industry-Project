@@ -2,11 +2,7 @@
        
 @section('content') 
 
-<style>
-	.container{
-    	position:relative;
-	}
-</style>
+
 
 <div id="slides">
     <img src="http://placehold.it/940x300">

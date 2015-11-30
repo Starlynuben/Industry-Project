@@ -150,9 +150,13 @@ footer{
 }
 
 */
+html, body {
+	height: 100%;
+}
+
 .container{
-	
     min-height: 100%;
+
     
 }
 
@@ -160,14 +164,16 @@ footer{
 	display: none;
 }
 
+
  body{
  	margin: 0;
+ 	overflow: auto;
  }
 
  header{
  	width: 100%;
  	margin: auto;
- 	background-color: #535362;
+ 	background-color: rgb(204, 204, 204);
  	margin: 0;
 
  	.headerNumber{
@@ -238,7 +244,8 @@ footer{
  }
 
 .pageTitle{
-	margin: 3em 0 2em 5em;
+	margin: 3em 0 2em 8em;
+	font-size: 1.5em;
 }
 
  main{
@@ -274,11 +281,15 @@ footer{
  footer{
  	height: 3em;
  	width: 100%;
- 	background-color: #E80000;
- 	margin-top: 5em;
- 	position: absolute;
+ 	background-color: rgb(204, 204, 204);
+ 	position: relative;
+ 	clear: both;
+ 	margin-top: -3em;
  	bottom: 0;
  	left: 0;
+ 	display: block;
+ 	
+
 
 }
 .footerInfo{
@@ -329,16 +340,45 @@ footer{
 /*Contact Page -------------------------------*/
 
 form{
-	margin-left: 10em;
+	display: block;
 }
 .contactTitle{
-	margin: 3em 0 3em 10em;
+	margin: 0 0 1em 0;
+	font-size: 1.5em;
 }
+.contactForm{
+	margin-left: 5em;
+	margin-bottom: 5em;
+	float: left;
+	width: 30em;
 
+	textarea{
+		max-width: 35em;
+	}
+}
+.contactInformation{
+	width: 20em;
+	margin: 0 0 0 15em;
+	background-color: rgb(204, 204, 204);
+	padding: 2em;
+	display: block;
+	float: left;
+
+	.contactDirections{
+		width: 20em;
+		padding-left: 5em;
+	}
+	.contactLinks{
+		width: 20em;
+		text-align: center;
+		margin-top: 2em;
+	}
+}
 /*Employment Vacancies Page ----------------------------------*/
 
 .subTitle{
-	margin: 0 0 0 10em;
+	margin: 0 0 0 3em;
+	font-size: 1em;
 }
 
 .employmentLink{
@@ -348,14 +388,26 @@ form{
 /*FAQ Page ---------------------------------------*/
 
 .questionContainer{
-	margin-left: 15em;
+	margin-left: 20em;
 	
 }
 .faqContainer{
-
+	margin-bottom: 5em;
 }
 .questionSpan{
 	font-weight: bold;
 	font-size: 1.5em;
 	padding-right: 1em;
+}
+// Terms and Conditions Page -----------------------------------------------
+
+.termsContainer{
+	width: 70em;
+	margin: auto;
+	line-height: 1.3em;
+	
+}
+.termsText{
+	color: rgb(102, 102, 102);
+	margin-top: 3em;
 }

@@ -43,10 +43,10 @@
 	@yield('content')
 
 	</body>
-
-	<footer><div class="footerInfo">2015 Copyright The Good Guys Ltd.  All Rights Reserved</div></footer>
-
 </div>
+	<footer><div class="footerInfo">2015 Copyright The Good Guys Ltd.  All Rights Reserved <a href="{{url('terms')}}">Terms and Conditions</a></div></footer>
+
+
 
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="{{asset('js/script.js')}}"></script>

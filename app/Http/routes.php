@@ -15,3 +15,4 @@ Route::get('gallery', "PagesController@showGallery");
 Route::get('contact', "PagesController@showContact");
 Route::get('employment', "PagesController@showEmployment");
 Route::get('faq', "PagesController@showFAQ");
+Route::get('terms', "PagesController@showTerms");

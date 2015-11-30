@@ -150,6 +150,9 @@ footer{
 }
 
 */
+html, body {
+  height: 100%; }
+
 .container {
   min-height: 100%; }
 
@@ -157,12 +160,13 @@ footer{
   display: none; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  overflow: auto; }
 
 header {
   width: 100%;
   margin: auto;
-  background-color: #535362;
+  background-color: #cccccc;
   margin: 0; }
   header .headerNumber {
     font-size: 2em;
@@ -212,7 +216,8 @@ header {
   font-size: 1.3em; }
 
 .pageTitle {
-  margin: 3em 0 2em 5em; }
+  margin: 3em 0 2em 8em;
+  font-size: 1.5em; }
 
 main .boxHolder {
   margin: 2em auto 0 auto;
@@ -241,11 +246,13 @@ main .contactEmailForm {
 footer {
   height: 3em;
   width: 100%;
-  background-color: #E80000;
-  margin-top: 5em;
-  position: absolute;
+  background-color: #cccccc;
+  position: relative;
+  clear: both;
+  margin-top: -3em;
   bottom: 0;
-  left: 0; }
+  left: 0;
+  display: block; }
 
 .footerInfo {
   padding-top: 1em;
@@ -291,23 +298,60 @@ footer {
 
 /*Contact Page -------------------------------*/
 form {
-  margin-left: 10em; }
+  display: block; }
 
 .contactTitle {
-  margin: 3em 0 3em 10em; }
+  margin: 0 0 1em 0;
+  font-size: 1.5em; }
+
+.contactForm {
+  margin-left: 5em;
+  margin-bottom: 5em;
+  float: left;
+  width: 30em; }
+  .contactForm textarea {
+    max-width: 35em; }
+
+.contactInformation {
+  width: 20em;
+  margin: 0 0 0 15em;
+  background-color: #cccccc;
+  padding: 2em;
+  display: block;
+  float: left; }
+  .contactInformation .contactDirections {
+    width: 20em;
+    padding-left: 5em; }
+  .contactInformation .contactLinks {
+    width: 20em;
+    text-align: center;
+    margin-top: 2em; }
 
 /*Employment Vacancies Page ----------------------------------*/
 .subTitle {
-  margin: 0 0 0 10em; }
+  margin: 0 0 0 3em;
+  font-size: 1em; }
 
 .employmentLink {
   margin: 0 0 0 20em; }
 
 /*FAQ Page ---------------------------------------*/
 .questionContainer {
-  margin-left: 15em; }
+  margin-left: 20em; }
+
+.faqContainer {
+  margin-bottom: 5em; }
 
 .questionSpan {
   font-weight: bold;
   font-size: 1.5em;
   padding-right: 1em; }
+
+.termsContainer {
+  width: 70em;
+  margin: auto;
+  line-height: 1.3em; }
+
+.termsText {
+  color: #666666;
+  margin-top: 3em; }
