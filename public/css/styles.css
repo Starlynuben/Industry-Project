@@ -216,7 +216,7 @@ header {
   font-size: 1.3em; }
 
 .pageTitle {
-  margin: 3em 0 2em 8em;
+  margin: 3em 0 2em 10em;
   font-size: 1.5em; }
 
 main .boxHolder {
@@ -296,6 +296,16 @@ footer {
 #slides a:hover, #slides a:active {
   color: #9e2020; }
 
+/*Gallery Page -------------------------------*/
+.galleryBody {
+  background-color: black; }
+
+.galleria {
+  width: 100%;
+  height: 80vh;
+  background: #000;
+  margin: 0 auto 3em auto; }
+
 /*Contact Page -------------------------------*/
 form {
   display: block; }
@@ -327,13 +337,21 @@ form {
     text-align: center;
     margin-top: 2em; }
 
-/*Employment Vacancies Page ----------------------------------*/
+/*Employment Vacancies Page and Jobs Pages ----------------------------------*/
 .subTitle {
   margin: 0 0 0 3em;
   font-size: 1em; }
 
+.employmentContainer {
+  margin: 0 0 5em 15em; }
+
 .employmentLink {
-  margin: 0 0 0 20em; }
+  margin: 0 0 0 3em;
+  line-height: 1.5em; }
+
+.jobText {
+  color: #666666;
+  margin-top: 3em; }
 
 /*FAQ Page ---------------------------------------*/
 .questionContainer {
@@ -348,7 +366,7 @@ form {
   padding-right: 1em; }
 
 /*Terms and Conditions Page -----------------------------------------------*/
-.termsContainer {
+.textContainer {
   width: 70em;
   margin: auto;
   line-height: 1.3em; }

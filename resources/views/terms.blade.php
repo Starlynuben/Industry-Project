@@ -6,7 +6,7 @@
 	
 		<h1 class="pageTitle">Terms and Conditions</h1>
 		
-		<div class="termsContainer">
+		<div class="textContainer">
 
 			<h2 class="subTitle">THE GOOD GUYS LTD TERMS & CONDITIONS</h2>
 

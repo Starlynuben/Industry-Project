@@ -34,4 +34,8 @@ class PagesController extends Controller
 
         return view('terms');
     }
+        public function showJob() {
+
+        return view('job');
+    }
 }

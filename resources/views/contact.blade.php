@@ -53,7 +53,7 @@
 						{!! Form::email('email') !!}
 
 						{!! Form::label('message', 'Message');!!}
-						{!! Form::textarea('message') !!}
+						{!! Form::textarea('content') !!}
 						
 						<br>
 
