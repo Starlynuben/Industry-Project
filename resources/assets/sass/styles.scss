@@ -288,9 +288,15 @@ html, body {
  	bottom: 0;
  	left: 0;
  	display: block;
- 	
+}
+.footerLinks{
+	float: left;
+	margin: 1em 0 0 2em;
 
-
+	a{
+		text-decoration: none;
+		color: black;
+	}
 }
 .footerInfo{
 	padding-top: 1em; 
@@ -432,4 +438,10 @@ form{
 }
 .termsBottom{
 	margin-bottom: 5em;
+}
+
+/*Login Page --------------------------------------------*/
+
+.loginForm{
+	margin-left: 15em;
 }

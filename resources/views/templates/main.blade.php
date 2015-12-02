@@ -45,13 +45,25 @@
 
 	</body>
 </div>
-	<footer><div class="footerInfo">2015 Copyright The Good Guys Ltd.  All Rights Reserved <a href="{{url('terms')}}">Terms and Conditions</a></div></footer>
+	<footer>
+		<div class="footerLinks">
+			<a href="{{url('terms')}}">Terms and Conditions</a> | 
+			@if(Auth::check())
+				<a href="{{url('logout')}}">Logout</a>
+			@else
+				<a href="{{url('login')}}">Login</a>
+			@endif
+		</div>
 
+		<div class="footerInfo">2015 Copyright The Good Guys Ltd.  All Rights Reserved</div>
+	</footer>
 
+<div id="token" style="display:none;">{{ csrf_token() }}</div>
 
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="../galleria/galleria-1.4.2.min.js"></script>
 <script src="{{asset('js/jquery.slides.min.js')}}"></script>
+<script src="{{asset('js/jeditable.js')}}"></script>
 <script src="{{asset('js/script.js')}}"></script>
 
 

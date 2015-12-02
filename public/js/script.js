@@ -23,8 +23,40 @@ $(function(){
 
 // Gallery Page
 
+var url = window.location.href;
+	
+if(url.search("gallery") >= 0){
+
 Galleria.loadTheme('../galleria/themes/classic/galleria.classic.min.js');
-Galleria.run('.galleria');
+Galleria.run('.galleria');	
+
+}
+
+// Jeditable
+
+$(function(){
+
+	$("[data-url]").each(function(i,el){
+
+		var url =$(el).attr("data-url");
+		var options = {
+			type:"textarea",
+			submitdata:{
+				_method:"PUT",
+				_token:$("#token").text(),
+			},
+			submit:"OK"
+		};
+
+		$(this).editable(url,options);
+
+	});
+
+});
+
+
+
+	
 
 
 

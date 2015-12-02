@@ -254,6 +254,13 @@ footer {
   left: 0;
   display: block; }
 
+.footerLinks {
+  float: left;
+  margin: 1em 0 0 2em; }
+  .footerLinks a {
+    text-decoration: none;
+    color: black; }
+
 .footerInfo {
   padding-top: 1em;
   text-align: center; }
@@ -377,3 +384,7 @@ form {
 
 .termsBottom {
   margin-bottom: 5em; }
+
+/*Login Page --------------------------------------------*/
+.loginForm {
+  margin-left: 15em; }

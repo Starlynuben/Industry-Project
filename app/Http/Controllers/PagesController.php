@@ -28,7 +28,10 @@ class PagesController extends Controller
     }
     public function showFAQ(){
 
-    	return view('faq');
+        $faqs = \App\Faq::all();
+
+
+    	return view('faq',["faqs"=>$faqs]);
     }
     public function showTerms() {
 

@@ -19,8 +19,9 @@
 				</p>
 
 				<p class="contactLinks">
-					We do not sell household and electrical appliances. 
-					However for our separate businesses selling household and electrical appliances click here. 
+
+					<div data-url="{{url('contents/1')}}">{!! \App\Content::find(1)->content !!}</div>
+
 					<br><br>
 					<a href="http://www.thegoodguysgroup.co.nz/">The Good Guys Group</a>
 					<br><br>
