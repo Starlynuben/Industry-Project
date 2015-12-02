@@ -168,8 +168,8 @@ header {
   margin: auto;
   background-color: #cccccc;
   margin: 0; }
-  header .headerNumber {
-    font-size: 2em;
+  header .headerInfo {
+    font-size: 1.5em;
     margin: 0; }
   header #logo {
     width: 30em;
@@ -208,7 +208,7 @@ header {
           color: black;
           font-size: 1.3em; }
 
-#companyMessage {
+.companyMessage {
   margin: 2em auto 2em auto;
   height: 4em;
   width: 50%;
@@ -225,20 +225,16 @@ main .boxHolder {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
-  main .boxHolder #infoBox1 {
+  main .boxHolder .infoBox1 {
     width: 30em;
     margin-right: 10%;
     background-color: #DDDDDD;
     padding: 2em;
     margin-bottom: 10em;
     line-height: 1.3em; }
-  main .boxHolder #infoBox2 {
-    width: 30em;
+  main .boxHolder .infoBox2 {
     height: 20em;
-    background-color: #DDDDDD;
-    padding: 2em;
-    margin-bottom: 10em;
-    line-height: 1.3em; }
+    margin-right: 0; }
 
 main .contactEmailForm {
   width: 10em; }
@@ -271,6 +267,9 @@ footer {
 
 .slidesjs-previous {
   margin: 0 0 0 2em; }
+
+.slidesjs-next {
+  margin-left: 1em; }
 
 .slidesjs-pagination li a {
   display: block;
@@ -380,7 +379,7 @@ form {
 
 .termsText {
   color: #666666;
-  margin-top: 3em; }
+  margin: 3em 0 3em 0; }
 
 .termsBottom {
   margin-bottom: 5em; }

@@ -156,8 +156,7 @@ html, body {
 
 .container{
     min-height: 100%;
-
-    
+  
 }
 
 #bars{
@@ -176,8 +175,8 @@ html, body {
  	background-color: rgb(204, 204, 204);
  	margin: 0;
 
- 	.headerNumber{
- 		font-size: 2em;
+ 	.headerInfo{
+ 		font-size: 1.5em;
  		margin: 0;
  	}
 
@@ -235,7 +234,7 @@ html, body {
  }
 
 
- #companyMessage{
+ .companyMessage{
  	margin: 2em auto 2em auto;
  	height: 4em;
  	width: 50%;
@@ -256,7 +255,7 @@ html, body {
  		width: 70em;
  		display: flex;
 
- 		#infoBox1{
+ 		.infoBox1{
  			width: 30em;
  			margin-right: 10%;
  			background-color: #DDDDDD;
@@ -264,13 +263,9 @@ html, body {
  			margin-bottom: 10em;
  			line-height: 1.3em;
  		}
- 		#infoBox2{
- 			width: 30em;
+ 		.infoBox2{
  			height: 20em;
- 			background-color: #DDDDDD;
- 			padding: 2em;
- 			margin-bottom: 10em;
- 			line-height: 1.3em;
+ 			margin-right: 0;
  		}
  	}
 
@@ -313,7 +308,7 @@ html, body {
 	margin: 0 0 0 2em;
 }
 .slidesjs-next{
-	
+	margin-left: 1em;
 }
 .slidesjs-pagination li a {
     display: block;
@@ -434,7 +429,7 @@ form{
 }
 .termsText{
 	color: rgb(102, 102, 102);
-	margin-top: 3em;
+	margin: 3em 0 3em 0;
 }
 .termsBottom{
 	margin-bottom: 5em;

@@ -10,18 +10,18 @@
 		<div>
 			<div class="contactInformation">
 				
-				<p class="contactDirections">
-					59 Rangi Road, <br>
-					Takanini, Auckland <br>
-					<br>
-					Ph: (64-9) 269 0446 <br>
-					Fax: (64-9) 269 0447 <br>
-				</p>
+				@if(Auth::check())
+				<div class="contactDirections" data-url="{{url('contents/2')}}">{!! \App\Content::find(2)->content !!}</div>
+
+				<div class="contactLinks" data-url="{{url('contents/1')}}">{!! \App\Content::find(1)->content !!}</div>
+				@else
+				<div class="contactDirections">{!! \App\Content::find(2)->content !!}</div>
+
+				<div class="contactLinks">{!! \App\Content::find(1)->content !!}</div>
+				@endif
 
 				<p class="contactLinks">
-
-					<div data-url="{{url('contents/1')}}">{!! \App\Content::find(1)->content !!}</div>
-
+					
 					<br><br>
 					<a href="http://www.thegoodguysgroup.co.nz/">The Good Guys Group</a>
 					<br><br>

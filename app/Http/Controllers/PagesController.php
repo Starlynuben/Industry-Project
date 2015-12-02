@@ -30,7 +30,6 @@ class PagesController extends Controller
 
         $faqs = \App\Faq::all();
 
-
     	return view('faq',["faqs"=>$faqs]);
     }
     public function showTerms() {
