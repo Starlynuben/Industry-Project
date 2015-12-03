@@ -43,18 +43,23 @@
 
 						{!! Form::label('name', 'Name', array('class' => 'formwidth'));!!}
 						{!! Form::text('name') !!}
+						{!! $errors->first('name','<p class="error">:message<p>')!!}
 
 						{!! Form::label('phone', 'Phone Number');!!}
 						{!! Form::text('phone') !!}
+						{!! $errors->first('phone','<p class="error">:message<p>')!!}
 
 						{!! Form::label('mobile', 'Mobile Number');!!}
 						{!! Form::text('mobile') !!}
+						{!! $errors->first('mobile','<p class="error">:message<p>')!!}
 
 						{!! Form::label('email', 'Email');!!}
 						{!! Form::email('email') !!}
+						{!! $errors->first('email','<p class="error">:message<p>')!!}
 
 						{!! Form::label('message', 'Message');!!}
 						{!! Form::textarea('content') !!}
+						{!! $errors->first('content','<p class="error">:message<p>')!!}
 						
 						<br>
 

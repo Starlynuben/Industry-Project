@@ -41,7 +41,7 @@
 			<br><br>
 			If you believe you are worthy of joining our great company, send me your CV today!
 			<br><br>
-			For more information about The Good Guys Group, check out our website www.thegoodguysgroup.co.nz 
+			For more information about The Good Guys Group, check out our website <a href="http://www.thegoodguysgroup.co.nz/">www.thegoodguysgroup.co.nz</a> 
 
 			</p>
 			<br><br><br>
@@ -50,27 +50,31 @@
 
 			 <p class="contactTitle">Applying For This Job</p>
 
-				{!!  Form::open(array('url' => 'contact', 'class'=>'pure-form pure-form-stacked')) !!}
+				{!!  Form::open(array('url' => 'job', 'class'=>'pure-form pure-form-stacked', 'files'=>true)) !!}
 				
+					{!! Form::label('name', 'Name', array('class' => 'formwidth'));!!}
+					{!! Form::text('name') !!}
+					{!! $errors->first('name','<p class="error">:message<p>')!!}
 
-						{!! Form::label('name', 'Name', array('class' => 'formwidth'));!!}
-						{!! Form::text('name') !!}
+					{!! Form::label('phone', 'Phone Number');!!}
+					{!! Form::text('phone') !!}
+					{!! $errors->first('phone','<p class="error">:message<p>')!!}
 
-						{!! Form::label('phone', 'Phone Number');!!}
-						{!! Form::text('phone') !!}
+					{!! Form::label('email', 'Email');!!}
+					{!! Form::email('email') !!}
+					{!! $errors->first('email','<p class="error">:message<p>')!!}
 
-						{!! Form::label('mobile', 'Mobile Number');!!}
-						{!! Form::text('mobile') !!}
+					{!! Form::label('cv', 'Upload a CV');!!}
+					{!! Form::file('cv') !!}
+					{!! $errors->first('cv','<p class="error">:message<p>')!!}
 
-						{!! Form::label('email', 'Email');!!}
-						{!! Form::email('email') !!}
+					{!! Form::label('message', 'Message');!!}
+					{!! Form::textarea('content') !!}
+					{!! $errors->first('message','<p class="error">:message<p>')!!}
+					
+					<br>
 
-						{!! Form::label('message', 'Message');!!}
-						{!! Form::textarea('message') !!}
-						
-						<br>
-
-						<input type="submit" class="pure-button pure-button-primary"  value="Contact Us">
+					<input type="submit" class="pure-button pure-button-primary"  value="Contact Us">
 					
 				{!! Form::close() !!}
 

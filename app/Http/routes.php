@@ -11,11 +11,12 @@
 |
 */
 Route::get('home', "PagesController@showHome");
-Route::get('gallery', "PagesController@showGallery");
 Route::get('employment', "PagesController@showEmployment");
 Route::get('faq', "PagesController@showFAQ");
 Route::get('terms', "PagesController@showTerms");
 Route::get('job', "PagesController@showJob");
+
+Route::resource('gallery', "PhotoController");
 
 Route::get('login', "LoginController@showLoginForm");
 Route::post('processLogin',"LoginController@processLogin");
@@ -23,7 +24,7 @@ Route::get('logout',"LoginController@logout");
 
 Route::get('contact', "PagesController@showContact");
 
-Route::post('contact', function(){
+Route::post('contact', function(App\Http\Requests\ContactRequest $request){
 
 	$data = Request::all();
 
@@ -34,6 +35,19 @@ Route::post('contact', function(){
         });
 });
 
+Route::post('job', function(App\Http\Requests\ContactRequest $request){
+
+	$data = Request::all();
+
+	Mail::send('jobview', $data, function ($m)  {
+            $m->from('theGoodGuys@website.com', 'Message From Website');
+
+            $m->to("starlynuben97@gmail.com","Company")->subject('Website Email');
+
+            $m->attach($pathToFile);
+        });
+});
+
 Route::put('contents/{id}', function($id){
 
 	$content = App\Content::find($id);
@@ -41,3 +55,4 @@ Route::put('contents/{id}', function($id){
 	$content -> save();
 	return $content->content;
 });
+

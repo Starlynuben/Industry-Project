@@ -251,7 +251,7 @@ footer {
   display: block; }
 
 .footerLinks {
-  float: left;
+  position: absolute;
   margin: 1em 0 0 2em; }
   .footerLinks a {
     text-decoration: none;
@@ -259,7 +259,8 @@ footer {
 
 .footerInfo {
   padding-top: 1em;
-  text-align: center; }
+  text-align: center;
+  display: block; }
 
 /*Home Page Slider ----------------------------------*/
 #slides {
@@ -312,6 +313,14 @@ footer {
   background: #000;
   margin: 0 auto 3em auto; }
 
+.newPhotoForm {
+  padding: 1em;
+  background-color: white;
+  margin-bottom: 3em; }
+  .newPhotoForm label {
+    margin-bottom: 1em !important;
+    font-size: 1.5em; }
+
 /*Contact Page -------------------------------*/
 form {
   display: block; }
@@ -342,6 +351,9 @@ form {
     width: 20em;
     text-align: center;
     margin-top: 2em; }
+
+.error {
+  color: red; }
 
 /*Employment Vacancies Page and Jobs Pages ----------------------------------*/
 .subTitle {

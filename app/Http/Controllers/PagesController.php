@@ -13,11 +13,6 @@ class PagesController extends Controller
 
     	return view('index');
     }
-
-    public function showGallery(){
-
-    	return view('gallery');
-    }
     public function showEmployment(){
 
     	return view('employment');
