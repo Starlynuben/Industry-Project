@@ -35,17 +35,21 @@ Route::post('contact', function(App\Http\Requests\ContactRequest $request){
         });
 });
 
-Route::post('job', function(App\Http\Requests\ContactRequest $request){
+Route::post('job', function(App\Http\Requests\JobRequest $request){
 
 	$data = Request::all();
 
-	Mail::send('jobview', $data, function ($m)  {
+	$filename = Request::file('cv')->getClientOriginalName();
+ 	$request->file('cv')->move('files', $filename);
+
+	Mail::send('jobview', $data, function ($m) use ($filename) {
             $m->from('theGoodGuys@website.com', 'Message From Website');
 
             $m->to("starlynuben97@gmail.com","Company")->subject('Website Email');
 
-            $m->attach($pathToFile);
+            $m->attach('files/'.$filename);
         });
+	return redirect('home');
 });
 
 Route::put('contents/{id}', function($id){

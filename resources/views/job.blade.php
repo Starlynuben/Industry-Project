@@ -64,13 +64,15 @@
 					{!! Form::email('email') !!}
 					{!! $errors->first('email','<p class="error">:message<p>')!!}
 
+					{!! Form::hidden('job_description', 'Territory Manager - Auckland - Direct Sales')!!}
+
 					{!! Form::label('cv', 'Upload a CV');!!}
 					{!! Form::file('cv') !!}
 					{!! $errors->first('cv','<p class="error">:message<p>')!!}
 
 					{!! Form::label('message', 'Message');!!}
 					{!! Form::textarea('content') !!}
-					{!! $errors->first('message','<p class="error">:message<p>')!!}
+					{!! $errors->first('content','<p class="error">:message<p>')!!}
 					
 					<br>
 

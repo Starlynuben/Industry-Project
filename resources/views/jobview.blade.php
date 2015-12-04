@@ -1,8 +1,7 @@
-<h1>Hi there</h1>
+<h1>This is an Email from the good guys site</h1>
 
-<p>{{$name}}</p> <br>
-<p>{{$phone}}</p> <br>
-<p>{{$mobile}}</p> <br>
-<p>{{$email}}</p> <br>
+<p>{{$name}} is applying for the position of {{$job_description}} </p>
+<p>Phone number: {{$phone}}</p>
+<p>Email: {{$email}}</p>
 <br>
-<p>{{$content}}</p> 
+<p>Message: {{$content}}</p> 

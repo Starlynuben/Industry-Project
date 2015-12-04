@@ -20,7 +20,7 @@
 			<div id="number"><p class="headerInfo">0800 448 988</p></div>
 			<div id="email"><p class="headerInfo">thegoodguys@biz.co.nz</p></div>
 		</div>
-		<div id="logo"><p class="companyName">The Good Guys</p></div>
+		<div id="logo"><a href="{{url('home')}}"><img src="{{asset('images/logo.jpg')}}" alt=""></a></div>
 
 		<div>
 			<nav>
