@@ -1,156 +1,3 @@
-/*.container{
-	display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    max-width: 120em;
-}
-
-body{
-	margin: 0;
-}
-
-header{
-	width: 100%;
-	margin: 0 auto;
-	background-color: white;
-	
-
-	#bars{
-		position: absolute;
-		right: 0.8em;
-		top: 0.5em;
-		display: block;
-		font-size: 6em;
-	}
-	#nav{
-		flex: 0 0 100%;
-	    height: 0;
-	    margin: 0;
-	    padding: 0;
-	    background-color: white;
-	    overflow: hidden;
-	    transition: all 0.5s ease;
-	    list-style-type: none;
-
-	    
-	}
-	.show{
-	   	height: 30em !important;
-	}
-	.companyName{
-		font-size: 6em;
-		margin: 0;
-		padding-left: 10%;
-		padding: 0.4em;
-	}
-
-	.headerNumber{
-		font-size: 2em;
-		margin: 0;
-	}
-
-	#logo{
-		width: 30em;
-		height: 7em;
-		padding-top: 1em;
-		margin-left: 15em;
-		background-color: white;
-		display: none;
-	}
-	#headerContainer{
-		float: right;
-		margin-right: 15em;
-		display: none;
-
-		#number{
-			width: 20em;
-			height: 3em; 
-			margin: 1em 0 0 0;
-		}
-
-		#email{
-			width: 20em;
-			height: 3em; 
-			margin: 1em 0 0 0;
-		
-		}	
-	}
-	
-
-	ul{
-		margin: 0.5em 0 0 0;
-		padding: 0;
-		flex-direction: column;
-		li{
-			height: 2em;
-			display: inline-block;
-			margin-right: 1em;
-			width: 100%;
-
-			a{
-			    display: block;
-			    text-align:center;
-			    line-height: 2em;
-			    text-decoration: none;
-			    color: black;
-			    font-size: 4em;
-
-			}
-		}
-	}
-	
-}
-
-#slideshow{
-	width: 100%;
-	height: 25em;
-	background-color: #E80000;
-}
-
-#companyMessage{
-	margin: 2em auto 2em auto;
-	height: 4em;
-	width: 50%;
-}
-
-main{
-	
-
-	.boxHolder{
-		margin: 2em auto 0 auto;
-		width: 70em;
-		display: flex;
-
-	}
-
-	.contactForm{
-
-		background-color: #e5e5ff;
-		
-		
-		
-		
-	}
-	.contactTitle{
-		font-size: 4em;
-		margin: 0;
-		
-	}
-}
-footer{
-	height: 3em;
-	width: 100%;
-	background-color: #E80000;
-	margin-top: 5em;
-}
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-	section{
-		max-width: 50em;
-	}
-}
-
-*/
-
 // Containers
 
 html, body {
@@ -163,29 +10,6 @@ body{
 .container{
     min-height: 100%; 
 }
-main{
- 	.boxHolder{
- 		margin: 2em auto 0 auto;
- 		width: 70em;
- 		display: flex;
-
- 		.infoBox1{
- 			width: 30em;
- 			margin-right: 10%;
- 			background-color: #DDDDDD;
- 			padding: 2em;
- 			margin-bottom: 10em;
- 			line-height: 1.3em;
- 		}
- 		.infoBox2{
- 			height: 20em;
- 			margin-right: 0;
- 		}
- 	}
- 	.contactEmailForm{
- 		width: 10em;
- 	}
- }
  header{
  	width: 100%;
  	margin: auto;
@@ -213,12 +37,14 @@ main{
  			width: 20em;
  			height: 3em; 
  			margin: 1em 0 0 0;
+ 			font-family: 'Oxygen', sans-serif;
  		}
 
  		#email{
  			width: 20em;
  			height: 3em; 
  			margin: 1em 0 0 0;
+ 			font-family: 'Oxygen', sans-serif;
 		
  		}	
  	}
@@ -226,27 +52,41 @@ main{
 	// The Navigation bar 
 
  	nav{
- 		margin-left: 15em;
- 		height: 2em;
+ 		margin: 0 0 0 15em;
+ 		height: 2.7em;
  		ul{
- 			margin: 0.5em 0 0 0;
+ 			margin: 0;
  			padding: 0;
  			flex-direction: column;
  			li{
- 				height: 1.5em;
  				display: inline-block;
- 				margin-right: 1em;
 
+ 				:hover{
+					background-color: rgb(204, 204, 204);
+ 				}
  				a{
+ 					padding: 0.5em;
+ 					line-height: 2em;
  					text-decoration: none;
  					color: black;
  					font-size: 1.3em;
+ 					font-family: 'Oxygen', sans-serif;
 
  				}
  			}
  		}
  	}
  }
+.pageTitle{
+	margin: 3em 0 2em 10em;
+	font-size: 1.5em;
+	font-family: 'Montserrat', sans-serif;
+}
+.subTitle{
+	margin: 0 0 0 3em;
+	font-size: 1em;
+	font-family: 'Montserrat', sans-serif;
+}
 footer{
 	height: 3em;
 	width: 100%;
@@ -257,11 +97,11 @@ footer{
 	bottom: 0;
 	left: 0;
 	display: block;
+	font-family: 'Open Sans', sans-serif;
 }
 .footerLinks{
 	position: absolute;
 	margin: 1em 0 0 2em;
-
 	a{
 		text-decoration: none;
 		color: black;
@@ -272,24 +112,36 @@ footer{
 	text-align: center;
 	display: block
 }
-// Misc styles
-
-#bars{
-	display: none;
-}
 
 //Home Page
+
+.boxHolder{
+	margin: 2em auto 0 auto;
+	width: 70em;
+	display: flex;
+	font-family: 'Open Sans', sans-serif;
+
+	.infoBox1{
+		width: 30em;
+		margin-right: 10%;
+		background-color: #DDDDDD;
+		padding: 2em;
+		margin-bottom: 10em;
+		line-height: 1.3em;
+	}
+	.infoBox2{
+		height: 20em;
+		margin-right: 0;
+	}
+}
+ 
 .companyMessage{
  	margin: 2em auto 2em auto;
  	height: 4em;
  	width: 50%;
  	text-align: center;
  	font-size: 1.3em;
-}
-
-.pageTitle{
-	margin: 3em 0 2em 10em;
-	font-size: 1.5em;
+ 	font-family: 'Open Sans', sans-serif;
 }
 
 /*Home Page Slider ----------------------------------*/
@@ -396,17 +248,13 @@ form{
 }
 /*Employment Vacancies Page and Jobs Pages ----------------------------------*/
 
-.subTitle{
-	margin: 0 0 0 3em;
-	font-size: 1em;
-}
 .employmentContainer{
 	margin: 0 0 5em 15em;
 }
 .employmentLink{
 	margin: 0 0 0 3em;
 	line-height: 1.5em;
-
+	font-family: 'Open Sans', sans-serif;
 }
 .jobText{
 	color: rgb(102, 102, 102);
@@ -416,10 +264,13 @@ form{
 
 .questionContainer{
 	margin-left: 20em;
-	
+}
+.faqCellContainer{
+	margin-bottom: 3em;
 }
 .faqContainer{
 	margin-bottom: 5em;
+	font-family: 'Open Sans', sans-serif;
 }
 .questionSpan{
 	font-weight: bold;

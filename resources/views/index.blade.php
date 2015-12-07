@@ -5,11 +5,9 @@
 
 
 <div id="slides">
-    <img src="http://placehold.it/940x300">
-    <img src="http://placehold.it/940x300">
-    <img src="http://placehold.it/940x300">
-    <img src="http://placehold.it/940x300">
-    <img src="http://placehold.it/940x300">
+    <img src="{{asset('images/image1.jpg')}}">
+    <img src="{{asset('images/image2.jpg')}}">
+    <img src="{{asset('images/image3.jpg')}}">
   </div>
 <body>
 

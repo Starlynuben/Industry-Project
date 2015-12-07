@@ -12,12 +12,8 @@
 		<br>
 		<br>
 		<a class="employmentLink" href="{{url('job')}}">Territory Manager - Auckland - Direct Sales</a><br>
-		<a class="employmentLink" href="">NameOfTheJob - Location - Direct Sales</a><br>
-		<a class="employmentLink" href="">NameOfTheJob - Location - Direct Sales</a><br>
-		<a class="employmentLink" href="">NameOfTheJob - Location - Direct Sales</a><br>
-		<a class="employmentLink" href="">NameOfTheJob - Location - Direct Sales</a><br>
-		<a class="employmentLink" href="">NameOfTheJob - Location - Direct Sales</a><br>
-		<a class="employmentLink" href="">NameOfTheJob - Location - Direct Sales</a><br>
+		<a class="employmentLink" href="{{url('job')}}">Territory Manager - Auckland - Direct Sales</a><br>
+		<a class="employmentLink" href="{{url('job')}}">Territory Manager - Auckland - Direct Sales</a><br>
 	</div>
 
 	</main>
